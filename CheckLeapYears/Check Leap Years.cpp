@@ -4,7 +4,7 @@ using namespace std;
 bool IsLeapYear(short Year)
 {
 
-    if (Year % 400 == 0)
+   /*  if (Year % 400 == 0)
     {
         return true;
     }
@@ -19,7 +19,9 @@ bool IsLeapYear(short Year)
     else
     {
         return false;
-    }
+    } */
+    
+    return (Year % 4 == 0 && Year % 10 != 0) || (Year % 400 == 0);
 }
 short ReadYear()
 {
@@ -43,3 +45,4 @@ int main()
 
 
 }
+
